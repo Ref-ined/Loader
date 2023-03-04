@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.Loader{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-top: 2px solid royalblue;
+    border-radius: 100%;
+    animation: Load linear 2s infinite;
+}
+
+@keyframes Load {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+    
+}
+
+.appBar{
+    background-color: royalblue;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-indent: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
